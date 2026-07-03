@@ -1,5 +1,47 @@
-openai==2.6.1
-python-dotenv
-openai-agents
-fastapi
-pydantic
+# ==============================
+# Core AI / LLM
+# ==============================
+openai==2.44.0        # OpenAI SDK for LLM access
+crewai==1.15.0        # Multi-agent orchestration framework
+
+# ==============================
+# API & Backend
+# ==============================
+fastapi               # High-performance API framework
+uvicorn               # ASGI server to run FastAPI
+
+# ==============================
+# Config & Environment
+# ==============================
+python-dotenv         # Load environment variables from .env
+pydantic              # Data validation and settings management
+
+# ==============================
+# Async & HTTP
+# ==============================
+httpx                 # Async HTTP client for API calls
+
+# ==============================
+# Retry Logic
+# ==============================
+tenacity              # Retry failed API calls with backoff
+
+# ==============================
+# Caching
+# ==============================
+cachetools            # In-memory caching for performance
+
+# ==============================
+# Logging
+# ==============================
+loguru                # Advanced logging (better than print)
+
+# ==============================
+# Performance (Optional)
+# ==============================
+#orjson                # Fast JSON parsing/serialization
+
+# ==============================
+# Advanced (Production)
+# ==============================
+#redis                 # Distributed caching & message broker
