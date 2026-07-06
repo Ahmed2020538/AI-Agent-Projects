@@ -2,7 +2,11 @@
   "model": "gpt-4.1-mini",
   "reasoning_effort": "medium",
   "verbosity": "medium",
+
   "retry_attempts": 3,
   "retry_delay": 1,
-  "max_requests": 5
+  "timeout": 30,
+
+  "max_requests": 5,
+  "cache_ttl": 300
 }
