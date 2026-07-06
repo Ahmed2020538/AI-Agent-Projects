@@ -1,0 +1,4 @@
+openai-agents
+pydantic>=2.0
+python-dotenv
+cachetools
