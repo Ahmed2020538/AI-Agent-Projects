@@ -1,47 +1,125 @@
 # ==============================
 # Core AI / LLM
 # ==============================
-openai==2.44.0        # OpenAI SDK for LLM access
-crewai==1.15.0        # Multi-agent orchestration framework
+
+openai==2.44.0
+# Short Description:
+# - Official OpenAI SDK
+# - Used to interact with LLM models (GPT)
+# - Handles requests, responses, and API communication
+
+openai-agents
+# Agent framework for building AI agents (if you are using it instead of custom agents)
+
+crewai==1.15.0
+# Short Description:
+# - Multi-agent orchestration framework
+# - Allows building collaborative AI agents (Planner, Executor, etc.)
+# - Useful for complex workflows and automation
+
 
 # ==============================
 # API & Backend
 # ==============================
-fastapi               # High-performance API framework
-uvicorn               # ASGI server to run FastAPI
+
+fastapi
+# Short Description:
+# - High-performance web framework for building APIs
+# - Supports async/await natively
+# - Automatic validation and OpenAPI docs
+
+uvicorn
+# Short Description:
+# - ASGI server to run FastAPI apps
+# - Handles incoming HTTP requests efficiently
+# - Production-ready with high concurrency support
+
 
 # ==============================
 # Config & Environment
 # ==============================
-python-dotenv         # Load environment variables from .env
-pydantic              # Data validation and settings management
+
+python-dotenv
+# Short Description:
+# - Loads environment variables from .env file
+# - Keeps secrets/config outside code (e.g., API keys)
+
+pydantic
+# Short Description:
+# - Data validation and parsing using Python models
+# - Ensures structured and type-safe data
+# - Used for request/response schemas
+
 
 # ==============================
 # Async & HTTP
 # ==============================
-httpx                 # Async HTTP client for API calls
+
+httpx
+# Short Description:
+# - Async HTTP client (better alternative to requests)
+# - Supports async calls and connection pooling
+# - Used for external API communication
+
 
 # ==============================
 # Retry Logic
 # ==============================
-tenacity              # Retry failed API calls with backoff
+
+tenacity
+# Short Description:
+# - Adds retry logic with backoff strategies
+# - Handles temporary failures (API timeouts, rate limits)
+# - Improves system reliability
+
 
 # ==============================
 # Caching
 # ==============================
-cachetools            # In-memory caching for performance
+
+cachetools
+# Short Description:
+# - In-memory caching utilities (TTLCache, LRUCache)
+# - Reduces repeated API calls
+# - Improves performance and reduces cost
+
 
 # ==============================
 # Logging
 # ==============================
-loguru                # Advanced logging (better than print)
+
+loguru
+# Short Description:
+# - Advanced logging library
+# - Cleaner and more powerful than built-in logging
+# - Supports structured logs, rotation, and formatting
+
 
 # ==============================
-# Performance (Optional)
+# Optional (Performance)
 # ==============================
-#orjson                # Fast JSON parsing/serialization
+
+# orjson
+# Short Description:
+# - Ultra-fast JSON parser/serializer
+# - Faster than built-in json module
+# - Useful for high-performance systems
+
 
 # ==============================
-# Advanced (Production)
+# Production
 # ==============================
-#redis                 # Distributed caching & message broker
+
+# redis
+# Short Description:
+# - Distributed in-memory data store
+# - Used for caching, queues, and pub/sub
+# - Suitable for scaling beyond single-instance apps
+
+
+# ==============================
+# Pips cases
+# ==============================
+# - pip install -r requirements.txt
+# - pip list
+# - pip freeze > requirements.txt
